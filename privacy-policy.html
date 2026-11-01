@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a4f49">
+  <meta name="description" content="سياسة الخصوصية لتطبيق حصة. تعرّف على البيانات التي نجمعها وكيف نستخدمها ونحميها وكيف تطلب حذفها.">
+  <title>سياسة الخصوصية | حصة</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18312f;
+      --muted: #526764;
+      --green: #0a4f49;
+      --green-soft: #eaf4f2;
+      --gold: #a47c2d;
+      --line: #dce6e3;
+      --paper: #fbfcfb;
+      --white: #fff;
+      --content: 72rem;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--green); text-underline-offset: .22em; }
+    a:hover { color: #063b37; }
+    a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+
+    .topbar {
+      min-height: 4.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .75rem max(1.25rem, calc((100vw - var(--content)) / 2));
+      background: var(--green);
+      color: white;
+    }
+    .brand { display: inline-flex; align-items: center; gap: .7rem; color: white; text-decoration: none; font-weight: 750; }
+    .brand-mark {
+      width: 2rem; height: 2rem; display: grid; place-items: center;
+      border: 1px solid #a9d4ca; border-radius: .55rem; color: #d2e9df;
+      font-size: 1rem; line-height: 1;
+    }
+    .topbar-note { color: #d8e9e5; font-size: .88rem; }
+
+    .hero {
+      background: var(--green);
+      color: white;
+      padding: clamp(3.5rem, 8vw, 6.5rem) max(1.25rem, calc((100vw - var(--content)) / 2)) 4rem;
+      border-bottom: 4px solid var(--gold);
+    }
+    .hero-inner { max-width: 49rem; }
+    .eyebrow { margin: 0 0 .8rem; color: #c8dfd8; font-size: .9rem; font-weight: 650; }
+    h1 { max-width: 12ch; margin: 0; font-size: clamp(2.3rem, 6vw, 4.5rem); line-height: 1.2; letter-spacing: -.025em; text-wrap: balance; }
+    .hero-copy { max-width: 62ch; margin: 1.2rem 0 0; color: #e1eeeb; font-size: 1.08rem; text-wrap: pretty; }
+    .updated { display: inline-flex; align-items: center; gap: .55rem; margin-top: 1.6rem; color: #d6e8e3; font-size: .9rem; }
+    .updated::before { content: ""; width: .48rem; height: .48rem; border-radius: 50%; background: #d6bd7a; }
+
+    .layout {
+      width: min(var(--content), 100%);
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 5rem;
+      display: grid;
+      grid-template-columns: 15rem minmax(0, 1fr);
+      gap: clamp(2rem, 5vw, 4.5rem);
+      align-items: start;
+    }
+    .contents { position: sticky; top: 1.5rem; padding: 1rem 0; }
+    .contents h2 { margin: 0 0 .7rem; color: var(--muted); font-size: .82rem; font-weight: 700; }
+    .contents ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+    .contents li { border-bottom: 1px solid var(--line); }
+    .contents a { display: block; padding: .52rem 0; color: var(--muted); font-size: .88rem; text-decoration: none; }
+    .contents a:hover { color: var(--green); }
+
+    main { min-width: 0; }
+    .summary {
+      margin: .25rem 0 2.4rem;
+      padding: 1.15rem 1.3rem;
+      background: var(--green-soft);
+      border: 1px solid #c8dfd8;
+      border-radius: .8rem;
+    }
+    .summary strong { display: block; margin-bottom: .25rem; color: var(--green); font-size: 1.05rem; }
+    .summary p { margin: 0; color: #284541; }
+    section { padding: 0 0 1.9rem; margin: 0 0 1.9rem; border-bottom: 1px solid var(--line); scroll-margin-top: 1.5rem; }
+    section:last-of-type { border-bottom: 0; }
+    h2 { margin: 0 0 .75rem; color: var(--green); font-size: clamp(1.3rem, 2.2vw, 1.65rem); line-height: 1.45; text-wrap: balance; }
+    h3 { margin: 1.15rem 0 .25rem; font-size: 1.04rem; line-height: 1.6; }
+    p { margin: .55rem 0; text-wrap: pretty; }
+    ul { margin: .45rem 0 0; padding-inline-start: 1.3rem; }
+    li { padding-inline-start: .2rem; margin: .28rem 0; }
+    li::marker { color: var(--gold); }
+    .subtle { color: var(--muted); }
+    .contact {
+      margin-top: 1.2rem;
+      padding: 1.2rem 1.3rem;
+      border: 1px solid var(--line);
+      border-radius: .8rem;
+      background: var(--white);
+    }
+    .contact p { margin: .2rem 0; }
+    footer {
+      padding: 1.5rem max(1.25rem, calc((100vw - var(--content)) / 2));
+      background: #edf3f1;
+      color: var(--muted);
+      font-size: .88rem;
+    }
+    footer p { max-width: var(--content); margin: 0 auto; }
+
+    @media (max-width: 780px) {
+      .layout { grid-template-columns: 1fr; gap: 1rem; padding-top: 1.4rem; }
+      .contents { position: static; padding: .3rem 0 1rem; }
+      .contents ol { display: flex; gap: .25rem .8rem; flex-wrap: wrap; border: 0; }
+      .contents li { border: 0; }
+      .contents a { padding: .18rem 0; }
+      .hero { padding-bottom: 3rem; }
+    }
+    @media (max-width: 420px) {
+      .topbar { min-height: 3.8rem; }
+      .topbar-note { font-size: .75rem; }
+      .hero-copy { font-size: 1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    @media print {
+      :root { color-scheme: light; }
+      body { background: #fff; font-size: 11pt; }
+      .topbar, .contents { display: none; }
+      .hero { padding: 1.5rem 0; background: #fff; color: var(--ink); border-bottom: 2px solid var(--green); }
+      .hero-copy, .updated, .eyebrow { color: var(--muted); }
+      .layout { display: block; width: 100%; padding: 1rem 0; }
+      section, .summary, .contact { break-inside: avoid; }
+      footer { padding: 1rem 0; background: #fff; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="حصة، إلى بداية الصفحة">
+      <span class="brand-mark" aria-hidden="true">ح</span>
+      <span>حصة</span>
+    </a>
+    <span class="topbar-note">معلومات واضحة عن بياناتك</span>
+  </header>
+
+  <div class="hero" id="top">
+    <div class="hero-inner">
+      <p class="eyebrow">الخصوصية والبيانات</p>
+      <h1>سياسة الخصوصية</h1>
+      <p class="hero-copy">توضح هذه السياسة أنواع المعلومات التي يتعامل معها تطبيق حصة، وأسباب استخدامها، والجهات التي تساعدنا على تشغيل التطبيق، والخيارات المتاحة لك.</p>
+      <div class="updated"><time datetime="2026-11-01">آخر تحديث: ١ نوفمبر ٢٠٢٦</time></div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <nav class="contents" aria-label="محتويات سياسة الخصوصية">
+      <h2>في هذه الصفحة</h2>
+      <ol>
+        <li><a href="#collect">المعلومات التي نتعامل معها</a></li>
+        <li><a href="#use">كيف نستخدم المعلومات</a></li>
+        <li><a href="#share">متى نشاركها</a></li>
+        <li><a href="#permissions">الصور والإشعارات</a></li>
+        <li><a href="#retention">الاحتفاظ والحذف</a></li>
+        <li><a href="#choices">حقوقك وخياراتك</a></li>
+        <li><a href="#security">الحماية والتغييرات</a></li>
+        <li><a href="#contact">التواصل معنا</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <aside class="summary" aria-label="ملخص">
+        <strong>باختصار</strong>
+        <p>نستخدم بيانات الحساب والملف الشخصي لتشغيل حسابك، وبيانات الاستثمار والدفع لمتابعة الطلبات والسحوبات، وبيانات الاتصال للرد على استفساراتك. لا نبيع بياناتك الشخصية.</p>
+      </aside>
+
+      <section id="collect">
+        <h2>المعلومات التي نتعامل معها</h2>
+        <p>بحسب الميزات التي تستخدمها، قد يجمع تطبيق حصة أو ينشئ المعلومات الآتية:</p>
+        <ul>
+          <li><strong>الحساب والملف الشخصي:</strong> الاسم، رقم الهاتف، البريد الإلكتروني المرتبط بالحساب، كلمة المرور التي تستخدمها لتسجيل الدخول، وتفاصيل الملف التي تدخلها مثل تاريخ الميلاد والمحافظة والتعليم والمهنة وصورة الملف الشخصي.</li>
+          <li><strong>الاستثمار والمعاملات:</strong> المشاريع التي تستثمر فيها، مبالغ الاستثمار والأرباح وطلبات السحب وحالاتها، وطريقة السحب واسم صاحب الحساب ورقم المحفظة أو الحساب المصرفي الذي تضيفه.</li>
+          <li><strong>إثباتات الدفع والصور:</strong> الصور التي تختار رفعها، مثل إيصال التحويل أو صورة الملف الشخصي. تُرفع الصور إلى خدمة تخزين ملفات خارجية، وقد يرتبط الإيصال بسجل طلب الاستثمار لمراجعته.</li>
+          <li><strong>الدعم والتواصل:</strong> نص الاستفسار والرسائل التي ترسلها إلى فريق الدعم، ورقم الهاتف أو بيانات التواصل التي تكتبها معها.</li>
+          <li><strong>الإشعارات:</strong> رمز إشعار الجهاز اللازم لإرسال تنبيهات الحساب والاستثمار والأرباح إلى جهازك.</li>
+          <li><strong>بيانات التشغيل:</strong> معلومات تقنية أساسية قد تنتج عند استخدام التطبيق أو خدماته، مثل سجلات الأخطاء والاتصال، بالقدر الذي توفره أنظمة التشغيل ومزودو الخدمات.</li>
+        </ul>
+        <p class="subtle">لا تطلب نسخة Android الحالية إذن الوصول إلى الموقع أو جهات الاتصال. يطلب التطبيق إذن الكاميرا أو الصور عند استخدام ميزة تتطلب التقاط صورة أو اختيارها، كما قد يطلب إذن الإشعارات لإرسال التنبيهات.</p>
+      </section>
+
+      <section id="use">
+        <h2>كيف نستخدم المعلومات</h2>
+        <ul>
+          <li>إنشاء حسابك وتسجيل الدخول والتحقق من بيانات الملف وتحديثها.</li>
+          <li>عرض المشاريع والاستثمارات والأرباح ومتابعة طلبات الدفع والسحب ومراجعة إيصالات التحويل.</li>
+          <li>إرسال إشعارات مرتبطة بحسابك أو طلباتك أو تحديثات المشاريع، إذا سمحت بها على جهازك.</li>
+          <li>الرد على استفساراتك وتقديم المساعدة ومعالجة المشكلات الفنية.</li>
+          <li>حماية الحسابات وسجلات المعاملات، والتحقق من إساءة الاستخدام، والامتثال للمتطلبات القانونية أو المحاسبية المطبقة.</li>
+        </ul>
+      </section>
+
+      <section id="share">
+        <h2>متى نشاركها</h2>
+        <p>نشارك الحد اللازم من المعلومات لتشغيل الميزات التي طلبتها، مع الجهات الآتية:</p>
+        <ul>
+          <li><strong>Supabase:</strong> خدمات المصادقة وقاعدة البيانات التي يعتمد عليها الحساب والملف الشخصي وسجلات التطبيق.</li>
+          <li><strong>Cloudflare:</strong> تخزين الصور والملفات التي ترفعها، مثل الصور والإيصالات. قد يكون الملف متاحاً عبر رابط التخزين بحسب إعدادات النشر؛ لا ترفع صورة تتضمن بيانات لا تريد كشفها.</li>
+          <li><strong>Firebase وخدمات Google:</strong> تشغيل الإشعارات الفورية وإيصالها إلى جهازك.</li>
+          <li><strong>الأشخاص المخولون داخل حصة:</strong> قد يطّلع فريق الدعم أو الفريق المالي على معلومات الحساب أو الاستفسار أو إثبات الدفع عند الحاجة إلى مساعدتك أو مراجعة معاملة.</li>
+          <li><strong>الجهات الرسمية أو المهنية:</strong> عندما يفرض القانون ذلك، أو لحماية الحقوق أو التعامل مع الاحتيال والمخاطر الأمنية.</li>
+        </ul>
+        <p>لا نبيع بياناتك الشخصية. ولا نسمح لمقدمي الخدمات باستخدامها لأغراضهم التسويقية المستقلة. قد تعالج هذه الجهات بعض المعلومات على خوادم تقع خارج بلدك، وفق إعداداتها وشروطها وسياسات الخصوصية الخاصة بها.</p>
+      </section>
+
+      <section id="permissions">
+        <h2>الصور والإشعارات</h2>
+        <h3>الكاميرا والصور</h3>
+        <p>لا نلتقط الصور في الخلفية. عندما تختار الكاميرا أو معرض الصور، يستخدم التطبيق الصورة التي تحددها للميزة المطلوبة، مثل صورة الحساب أو إثبات الدفع. قد تُرفع الصورة إلى Cloudflare وتُربط بحسابك أو بطلبك.</p>
+        <h3>الإشعارات</h3>
+        <p>يمكنك السماح بالإشعارات أو إيقافها من إعدادات جهازك. إذا أوقفتها، قد لا تصلك تنبيهات التطبيق الفورية، ويمكنك الاستمرار في فتح التطبيق لمراجعة المعلومات المتاحة فيه.</p>
+      </section>
+
+      <section id="retention">
+        <h2>الاحتفاظ بالمعلومات وحذف الحساب</h2>
+        <p>نحتفظ بالمعلومات ما دام الحساب نشطاً أو ما دامت لازمة لتقديم الخدمة. عند طلب حذف الحساب، يحذف التطبيق الحساب والبيانات المرتبطة التي تديرها خدمة الحساب عند نجاح طلب الحذف. وقد نحتفظ ببعض سجلات المعاملات للمدة اللازمة للالتزامات القانونية أو المحاسبية أو لحل النزاعات، ثم نحذفها أو نزيل ما يعرّف بك عندما يصبح ذلك ممكناً.</p>
+        <p>لحذف الحساب، افتح <strong>حسابي ← البيانات الشخصية ← حذف الحساب والبيانات</strong> واتبع الخطوات الظاهرة. قد تتطلب المعاملات المالية غير المكتملة أو المستحقات معالجةً قبل إتمام الحذف. الصور التي رُفعت إلى خدمة الملفات قد تحتاج إلى طلب حذف منفصل؛ تواصل معنا عبر البريد أدناه لنراجعها.</p>
+      </section>
+
+      <section id="choices">
+        <h2>حقوقك وخياراتك</h2>
+        <p>يمكنك تحديث بيانات ملفك من داخل التطبيق، والتحكم في إذن الإشعارات والصور من إعدادات جهازك. ويمكنك طلب نسخة من بياناتك أو تصحيحها أو حذفها بالتواصل معنا. سنراجع الطلب ونتحقق من هويتك قبل اتخاذ الإجراء، وقد نحتفظ بالمعلومات التي يلزم الاحتفاظ بها قانوناً.</p>
+      </section>
+
+      <section id="security">
+        <h2>حماية المعلومات والتغييرات</h2>
+        <p>نستخدم وسائل وإجراءات مناسبة للمساعدة في حماية المعلومات، ونقصر الوصول الداخلي عليها بحسب الحاجة لتشغيل الخدمة. يعتمد التطبيق أيضاً على مزودي خدمات خارجيين لتشغيل الحسابات وقاعدة البيانات والصور والإشعارات. لا توجد وسيلة نقل أو تخزين إلكترونية تضمن الحماية المطلقة.</p>
+        <p>قد نحدّث هذه السياسة عند تغيّر التطبيق أو طريقة معالجة البيانات. سننشر النسخة الأحدث في هذه الصفحة ونغيّر تاريخ التحديث أعلاه.</p>
+      </section>
+
+      <section id="contact">
+        <h2>التواصل معنا</h2>
+        <p>للاستفسار عن هذه السياسة أو لطلب الوصول إلى بياناتك أو تصحيحها أو حذفها، تواصل مع فريق تطبيق حصة:</p>
+        <div class="contact">
+          <p><strong>البريد الإلكتروني:</strong> <a href="mailto:support@hissa.app">support@hissa.app</a></p>
+          <p class="subtle">يرجى ذكر بريد الحساب أو رقم الهاتف المرتبط به، من دون إرسال كلمة المرور أو معلومات الدخول.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>© حصة. تنطبق هذه السياسة على تطبيق حصة وخدماته المرتبطة بالحساب.</p>
+  </footer>
+</body>
+</html>
