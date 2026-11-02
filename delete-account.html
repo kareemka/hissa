@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a4f49">
+  <meta name="description" content="قدّم طلب حذف حسابك والبيانات المرتبطة به في تطبيق حصة.">
+  <title>طلب حذف الحساب | حصة</title>
+  <style>
+    :root{color-scheme:light;--ink:#18312f;--muted:#526764;--green:#0a4f49;--soft:#eaf4f2;--gold:#a47c2d;--line:#dce6e3;--paper:#f7faf9;--white:#fff;font-family:"Segoe UI",Tahoma,Arial,sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased}a{color:var(--green)}
+    .topbar{padding:.8rem max(1.25rem,calc((100vw - 68rem)/2));background:var(--green);color:#fff;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800;font-size:1.15rem;color:#fff;text-decoration:none}.brand span{display:inline-grid;place-items:center;width:2rem;height:2rem;margin-inline-end:.45rem;border:1px solid #a9d4ca;border-radius:.6rem;color:#d2e9df}.topbar a:last-child{color:#e1eeeb;font-size:.9rem}
+    .hero{background:var(--green);color:#fff;border-bottom:4px solid var(--gold);padding:3.2rem max(1.25rem,calc((100vw - 68rem)/2)) 3rem}.hero p{margin:0 0 .5rem;color:#c8dfd8}.hero h1{margin:0;font-size:clamp(2rem,6vw,3.4rem);line-height:1.25}.hero .lead{max-width:45rem;margin-top:1rem;color:#e1eeeb}
+    main{width:min(48rem,100% - 2rem);margin:2.2rem auto 4rem}.notice{padding:1rem 1.15rem;background:var(--soft);border:1px solid #c8dfd8;border-radius:1rem;margin-bottom:1.2rem}.notice strong{color:var(--green)}.notice p{margin:.25rem 0}.card{background:#fff;border:1px solid var(--line);border-radius:1.2rem;padding:clamp(1.2rem,4vw,2rem);box-shadow:0 12px 36px #123b3510}.card h2{margin:0 0 .3rem;color:var(--green);font-size:1.45rem}.hint{margin:.2rem 0 1.2rem;color:var(--muted);font-size:.94rem}
+    label{display:block;margin:1rem 0 .35rem;font-weight:700}input,textarea,select{width:100%;font:inherit;color:var(--ink);background:#fff;border:1px solid #cfdcd8;border-radius:.75rem;padding:.8rem .9rem;min-height:3rem}textarea{min-height:7rem;resize:vertical}input:focus,textarea:focus,select:focus{outline:3px solid #0a4f4930;border-color:var(--green)}.required{color:#a73535}.consent{display:flex;align-items:flex-start;gap:.6rem;margin:1.1rem 0;color:var(--muted);font-size:.92rem}.consent input{width:1.2rem;height:1.2rem;min-height:auto;margin:.35rem 0 0;accent-color:var(--green);flex:0 0 auto}.submit{width:100%;border:0;border-radius:.8rem;background:var(--green);color:#fff;font:inherit;font-weight:750;padding:.9rem 1rem;cursor:pointer;box-shadow:0 8px 18px #0a4f4930}.submit:hover{background:#063b37}.small{font-size:.86rem;color:var(--muted);margin:1rem 0 0}.footer{text-align:center;color:var(--muted);font-size:.88rem;padding:1rem}
+    @media(min-width:700px){main{margin-top:2.8rem}.hero{padding-top:4rem;padding-bottom:3.6rem}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./privacy-policy.html"><span aria-hidden="true">ح</span>حصة</a><a href="./privacy-policy.html">سياسة الخصوصية</a></header>
+  <section class="hero"><p>الخصوصية والبيانات</p><h1>طلب حذف الحساب</h1><p class="lead">استخدم النموذج لإرسال طلب حذف حسابك والبيانات المرتبطة به في تطبيق حصة. سنراجع الطلب ونتواصل معك عند الحاجة للتحقق من ملكية الحساب.</p></section>
+  <main>
+    <aside class="notice"><strong>قبل الإرسال</strong><p>إذا كان بإمكانك الدخول إلى التطبيق، يمكنك أيضاً تقديم طلب الحذف من <b>حسابي ← البيانات الشخصية ← حذف الحساب والبيانات</b>. قد نحتفظ ببعض سجلات المعاملات للمدة التي تتطلبها الالتزامات القانونية أو المحاسبية.</p></aside>
+    <form class="card" action="https://formsubmit.co/ua.iq27@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="طلب حذف حساب تطبيق حصة">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://kareemka.github.io/hissa/delete-account.html?submitted=1">
+      <h2>بيانات طلب الحذف</h2><p class="hint">أدخل معلومات تساعدنا في العثور على الحساب. لا ترسل كلمة المرور أو معلومات الدفع.</p>
+      <label for="fullName">الاسم الكامل <span class="required">*</span></label><input id="fullName" name="الاسم الكامل" autocomplete="name" required maxlength="100">
+      <label for="accountPhone">رقم الهاتف المرتبط بالحساب <span class="required">*</span></label><input id="accountPhone" name="رقم الهاتف المرتبط بالحساب" type="tel" autocomplete="tel" required maxlength="30" placeholder="07xxxxxxxxx">
+      <label for="accountEmail">البريد الإلكتروني المرتبط بالحساب</label><input id="accountEmail" name="بريد الحساب" type="email" autocomplete="email" maxlength="150">
+      <label for="details">ملاحظات إضافية</label><textarea id="details" name="ملاحظات" maxlength="1000" placeholder="اختياري"></textarea>
+      <label class="consent"><input type="checkbox" name="إقرار صاحب الحساب" value="أقر أنني صاحب الحساب وأطلب حذفه" required><span>أقر أنني صاحب الحساب أو مفوّض عنه، وأطلب حذف الحساب والبيانات المرتبطة به. أفهم أن بعض سجلات المعاملات قد تُحتفظ بها عند وجود التزام قانوني.</span></label>
+      <button class="submit" type="submit">إرسال طلب حذف الحساب</button>
+      <p class="small">سنستخدم هذه البيانات لمعالجة طلب الحذف والتحقق منه فقط. إذا تعذر استخدام النموذج، راسلنا على <a href="mailto:ua.iq27@gmail.com">ua.iq27@gmail.com</a>.</p>
+    </form>
+  </main>
+  <footer class="footer">© حصة · <a href="./privacy-policy.html">سياسة الخصوصية</a></footer>
+  <script>
+    if (new URLSearchParams(location.search).has('submitted')) {
+      const notice = document.createElement('div');
+      notice.className = 'notice';
+      notice.setAttribute('role', 'status');
+      notice.innerHTML = '<strong>تم إرسال الطلب</strong><p>وصلت إلى صفحة التأكيد. سنراجع طلبك ونتواصل معك عند الحاجة.</p>';
+      document.querySelector('main').prepend(notice);
+      history.replaceState({}, '', location.pathname);
+    }
+  </script>
+</body>
+</html>
